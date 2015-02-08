@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		FA4232A01A8609EC00977CF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA42329F1A8609EC00977CF0 /* main.m */; };
 		FA4232A31A8609EC00977CF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4232A21A8609EC00977CF0 /* AppDelegate.m */; };
-		FA4232A61A8609EC00977CF0 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4232A51A8609EC00977CF0 /* FirstViewController.m */; };
-		FA4232A91A8609EC00977CF0 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4232A81A8609EC00977CF0 /* SecondViewController.m */; };
 		FA4232AC1A8609EC00977CF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4232AA1A8609EC00977CF0 /* Main.storyboard */; };
 		FA4232AE1A8609EC00977CF0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA4232AD1A8609EC00977CF0 /* Images.xcassets */; };
 		FA4232B11A8609EC00977CF0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4232AF1A8609EC00977CF0 /* LaunchScreen.xib */; };
 		FA4232BD1A8609EC00977CF0 /* beerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4232BC1A8609EC00977CF0 /* beerTests.m */; };
+		FA4232C81A86100500977CF0 /* Beer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4232C71A86100500977CF0 /* Beer.m */; };
+		FA4232CC1A86176E00977CF0 /* ParsingBeer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4232CB1A86176E00977CF0 /* ParsingBeer.m */; };
+		FAD806AB1A87B78D0097610D /* BeerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD806AA1A87B78D0097610D /* BeerTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +34,18 @@
 		FA42329F1A8609EC00977CF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FA4232A11A8609EC00977CF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FA4232A21A8609EC00977CF0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FA4232A41A8609EC00977CF0 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		FA4232A51A8609EC00977CF0 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		FA4232A71A8609EC00977CF0 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		FA4232A81A8609EC00977CF0 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		FA4232AB1A8609EC00977CF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA4232AD1A8609EC00977CF0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FA4232B01A8609EC00977CF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FA4232B61A8609EC00977CF0 /* beerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = beerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA4232BB1A8609EC00977CF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA4232BC1A8609EC00977CF0 /* beerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = beerTests.m; sourceTree = "<group>"; };
+		FA4232C61A860FC200977CF0 /* Beer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Beer.h; sourceTree = "<group>"; };
+		FA4232C71A86100500977CF0 /* Beer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Beer.m; path = "untitled folder/Beer.m"; sourceTree = "<group>"; };
+		FA4232CB1A86176E00977CF0 /* ParsingBeer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParsingBeer.m; sourceTree = "<group>"; };
+		FA4232CD1A86178000977CF0 /* ParsingBeer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParsingBeer.h; sourceTree = "<group>"; };
+		FAD806A91A87B78D0097610D /* BeerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerTableViewController.h; sourceTree = "<group>"; };
+		FAD806AA1A87B78D0097610D /* BeerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,16 +87,16 @@
 		FA42329C1A8609EC00977CF0 /* beer */ = {
 			isa = PBXGroup;
 			children = (
+				FA4232CA1A86172200977CF0 /* outils */,
+				FA4232C91A86108F00977CF0 /* metier */,
 				FA4232A11A8609EC00977CF0 /* AppDelegate.h */,
 				FA4232A21A8609EC00977CF0 /* AppDelegate.m */,
-				FA4232A41A8609EC00977CF0 /* FirstViewController.h */,
-				FA4232A51A8609EC00977CF0 /* FirstViewController.m */,
-				FA4232A71A8609EC00977CF0 /* SecondViewController.h */,
-				FA4232A81A8609EC00977CF0 /* SecondViewController.m */,
 				FA4232AA1A8609EC00977CF0 /* Main.storyboard */,
 				FA4232AD1A8609EC00977CF0 /* Images.xcassets */,
 				FA4232AF1A8609EC00977CF0 /* LaunchScreen.xib */,
 				FA42329D1A8609EC00977CF0 /* Supporting Files */,
+				FAD806A91A87B78D0097610D /* BeerTableViewController.h */,
+				FAD806AA1A87B78D0097610D /* BeerTableViewController.m */,
 			);
 			path = beer;
 			sourceTree = "<group>";
@@ -122,6 +125,24 @@
 				FA4232BB1A8609EC00977CF0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA4232C91A86108F00977CF0 /* metier */ = {
+			isa = PBXGroup;
+			children = (
+				FA4232C71A86100500977CF0 /* Beer.m */,
+				FA4232C61A860FC200977CF0 /* Beer.h */,
+			);
+			name = metier;
+			sourceTree = "<group>";
+		};
+		FA4232CA1A86172200977CF0 /* outils */ = {
+			isa = PBXGroup;
+			children = (
+				FA4232CB1A86176E00977CF0 /* ParsingBeer.m */,
+				FA4232CD1A86178000977CF0 /* ParsingBeer.h */,
+			);
+			name = outils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,9 +245,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA4232A91A8609EC00977CF0 /* SecondViewController.m in Sources */,
+				FA4232C81A86100500977CF0 /* Beer.m in Sources */,
+				FAD806AB1A87B78D0097610D /* BeerTableViewController.m in Sources */,
 				FA4232A31A8609EC00977CF0 /* AppDelegate.m in Sources */,
-				FA4232A61A8609EC00977CF0 /* FirstViewController.m in Sources */,
+				FA4232CC1A86176E00977CF0 /* ParsingBeer.m in Sources */,
 				FA4232A01A8609EC00977CF0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +442,7 @@
 				FA4232C21A8609EC00977CF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA4232C31A8609EC00977CF0 /* Build configuration list for PBXNativeTarget "beerTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +451,7 @@
 				FA4232C51A8609EC00977CF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
