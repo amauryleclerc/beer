@@ -14,5 +14,11 @@
     [super viewDidLoad];
     _nameLabel.text = _beer.name;
     _descriptionLabel.text = _beer.descriptionB;
+   
+    
+    NSURL * imageURL = [NSURL URLWithString:_beer.imageLabelURL];
+    NSData * imageData = [NSData dataWithContentsOfURL:imageURL];
+       _imageView.image =[UIImage imageWithData:imageData];
+
 }
 @end

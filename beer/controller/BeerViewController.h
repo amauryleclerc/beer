@@ -12,5 +12,6 @@
 @property (nonatomic, strong) Beer *beer;
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
 @property (strong, nonatomic) IBOutlet UILabel *descriptionLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
 @end

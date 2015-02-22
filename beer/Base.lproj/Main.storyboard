@@ -104,35 +104,48 @@
                         <viewControllerLayoutGuide type="bottom" id="29n-zD-QEg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="sSb-zt-lOt">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYS-1J-gNB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYS-1J-gNB">
                                 <rect key="frame" x="0.0" y="64" width="600" height="32"/>
                                 <accessibility key="accessibilityConfiguration" label="nameLabel"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="description" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6w-Zx-7Vh">
-                                <rect key="frame" x="0.0" y="104" width="600" height="327"/>
-                                <accessibility key="accessibilityConfiguration" label="descriptionLabel"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cXZ-Uw-x1f">
+                                <rect key="frame" x="0.0" y="110" width="300" height="490"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e1c-WR-xCO">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="description" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6w-Zx-7Vh">
+                                        <rect key="frame" x="0.0" y="196" width="300" height="300"/>
+                                        <accessibility key="accessibilityConfiguration" label="descriptionLabel"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="e1c-WR-xCO" secondAttribute="trailing" id="9nm-KN-pDC"/>
+                                    <constraint firstItem="e1c-WR-xCO" firstAttribute="top" secondItem="cXZ-Uw-x1f" secondAttribute="top" id="Kf6-Ak-qXz"/>
+                                    <constraint firstItem="e1c-WR-xCO" firstAttribute="leading" secondItem="cXZ-Uw-x1f" secondAttribute="leading" id="hl0-zO-KjM"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="GYS-1J-gNB" firstAttribute="top" secondItem="b6O-rc-CL7" secondAttribute="bottom" id="0zZ-6I-El9"/>
-                            <constraint firstItem="GYS-1J-gNB" firstAttribute="leading" secondItem="sSb-zt-lOt" secondAttribute="leadingMargin" id="GVV-Jt-XuL"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="GYS-1J-gNB" secondAttribute="trailing" id="QNs-ga-jUv"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="f6w-Zx-7Vh" secondAttribute="trailing" id="SF7-VS-Wet"/>
-                            <constraint firstItem="f6w-Zx-7Vh" firstAttribute="leading" secondItem="sSb-zt-lOt" secondAttribute="leadingMargin" id="kaV-ul-dpx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cXZ-Uw-x1f" secondAttribute="trailing" constant="-16" id="1DW-dl-YD9"/>
+                            <constraint firstItem="cXZ-Uw-x1f" firstAttribute="leading" secondItem="sSb-zt-lOt" secondAttribute="leadingMargin" constant="-16" id="Lzb-pe-wAy"/>
+                            <constraint firstItem="cXZ-Uw-x1f" firstAttribute="top" secondItem="GYS-1J-gNB" secondAttribute="bottom" constant="14" id="TNz-hF-OTK"/>
                         </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="descriptionLabel" destination="f6w-Zx-7Vh" id="84x-I9-vfx"/>
+                        <outlet property="imageView" destination="e1c-WR-xCO" id="fVj-k4-RZw"/>
                         <outlet property="nameLabel" destination="GYS-1J-gNB" id="O7R-2z-9eP"/>
                     </connections>
                 </viewController>

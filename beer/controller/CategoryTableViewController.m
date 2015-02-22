@@ -73,6 +73,9 @@
     [beerMapping addAttributeMappingsFromArray:@[@"name"]];
     [beerMapping addAttributeMappingsFromArray:@[@"id"]];
     [beerMapping addAttributeMappingsFromDictionary:@{ @"description": @"descriptionB" }];
+    [beerMapping addAttributeMappingsFromDictionary:@{ @"labels.medium": @"imageLabelURL" }];
+    
+    
     // register mappings Style with the provider using a response descriptor
     RKResponseDescriptor *responseDescriptorBeer =
     [RKResponseDescriptor responseDescriptorWithMapping:beerMapping

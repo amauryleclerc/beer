@@ -12,5 +12,6 @@
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *descriptionB;
 @property (nonatomic, strong) NSNumber *id;
+@property (nonatomic, strong) NSString *imageLabelURL;
 
 @end
